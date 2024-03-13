@@ -1,0 +1,260 @@
+
+@media (max-width: 960px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1440px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+
+
+@media (max-width: 1680px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+
+
+@media (max-width: 1920px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+#bloc_page
+{
+	width: 60%;
+	min-width: 650px;
+	margin: auto;
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+body
+{
+	background-color: #DFDFDF;
+	font-family:Calibri,"Arial",serif;
+}
+
+.haut_page, #corps
+{
+	margin: 30px;
+}
+
+#logo_edmitt
+{
+	max-width: 20%;
+	height: auto;
+}
+
+#logo_malga
+{
+	max-width: 25%;
+	height: auto;
+}
+
+
+#bloc_insa
+{
+	max-width:  52%;
+	height : auto;
+	display:  flex;
+	justify-content:  right;
+	align-items:  center;
+}
+
+#logo_insa
+{
+	max-width: 33%;
+	height: auto;
+}
+
+#logo_universita
+{
+	max-width: 35%;
+	height: auto;
+}
+
+#bloc_universita
+{
+	max-width:  52%;
+	height : auto;
+	display:  flex;
+	justify-content:  right;
+	align-items:  center;
+}
+
+#logos
+{
+	display:  flex;
+	justify-content: space-between;
+
+}
+#menu
+{
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: 2px black solid;
+}
+
+#menu div
+{
+	border:  0px gray solid;
+}
+
+.element_ind,.element_CV,.element_rec
+{
+	flex: 1;
+	text-align:  center;
+}
+
+.element_ind a,.element_CV a,.element_rec a
+{
+	text-decoration: none;
+	color: black;
+}
+
+.element_ind:nth-child(1),.element_CV:nth-child(2),.element_rec:nth-child(3)
+{
+	text-decoration: underline;
+}
+
+header h1
+{
+	font-size: 250%;
+	font-weight: bold;
+}
+
+
+#corps h1
+{
+	margin: 10px 20px 10px 20px;
+	font-size: 170%;
+}
+
+#corps h2
+{
+	font-size: 140%;
+}
+
+#corps h3
+{
+	font-size: 120%;
+}
+
+#corps h2,#corps div,#corps p,#corps li
+{
+	margin: 9px 20px 9px 20px;
+}
+
+#corps h3
+{
+	margin: 9px 30px 9px 30px;
+}
+
+#corps h1 span
+{
+	font-size: 80%;
+	font-weight: normal;
+}
+
+#bloc_acceuil
+{
+	display:  flex;
+	align-items:  center;
+}
+
+#topo_acceuil p
+{
+	text-align: center;
+	font-size: 95%;
+}
+
+#photo
+{
+	width: 40%;
+	max-width: 140px;
+	min-width: 60px;
+	height: auto;
+}
+
+
+#contact
+{
+	margin: 50px;
+}
+
+#bloc_contact
+{
+	display:  flex;
+	border: 1px black solid;
+	align-items:  center;
+	justify-content: center;
+}
+
+#bloc_contact p
+{
+	flex: 1;
+	margin: 5px;
+	text-align: center;
+	font-size: 80%;
+}
+
+.ligne_formation
+{
+	display: flex;
+	align-items: center;
+}
+
+.date
+{
+	font-weight: bold;
+	font-size: 100%;
+	text-align: center;
+	min-width: 90px;
+}
+
+.description p
+{
+	font-size: 100%;
+}
+
+.description_gras
+{
+	font-weight: bold;
+}
+
+
+.bloc_divers em
+{
+	text-decoration: underline;
+}
+
+.ligne_divers
+{
+	font-size: 100%;
+}
+
+.bloc_publi,.bloc_pres
+{
+	font-size: 90%;
+}
+

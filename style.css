@@ -1,62 +1,135 @@
+/* Responsive Typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
 @media (max-width: 960px) {
-	html {
-		font-size: 8px;
-	}
-}
-
-@media (max-width: 1200px) {
-    html {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 1440px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-
-
-@media (max-width: 1680px) {
     html {
         font-size: 14px;
     }
 }
 
-
-
-@media (max-width: 1920px) {
+@media (max-width: 768px) {
     html {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
-
-
-
-
-#bloc_page
-{
-	width: 60%;
-	min-width: 650px;
-	margin: auto;
-	background-color: #FFFFFF;
-	padding: 10px;
+/* Layout */
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
-body
-{
-	background-color: #DFDFDF;
-	font-family:Calibri,"Arial",serif;
+#bloc_page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
 }
 
-.haut_page, #corps
-{
-	margin: 30px;
+/* Header and Footer */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
 }
 
+header a, footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Links and Buttons */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6f61;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004a99;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+
+#photo
+{
+	width: 40%;
+	max-width: 140px;
+	min-width: 60px;
+	height: auto;
+}
+
+#bloc_acceuil
+{
+	display:  flex;
+	align-items:  center;
+}
+
+#topo_acceuil
+{
+	padding : 0.5rem;
+}
+
+#topo_acceuil p
+{
+	font-size: 95%;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+nav a {
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff6f61;
+    color: white;
+}
+
+/* Responsive Images and Logos */
 #logo_edmitt
 {
 	max-width: 20%;
@@ -87,7 +160,7 @@ body
 
 #logo_universita
 {
-	max-width: 35%;
+	max-width: 39%;
 	height: auto;
 }
 
@@ -104,96 +177,34 @@ body
 {
 	display:  flex;
 	justify-content: space-between;
+	padding : 1rem;
 
 }
-#menu
-{
-	margin: 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	border: 2px black solid;
+
+/* Content Sections */
+section {
+    margin: 2rem 0;
 }
 
-#menu div
-{
-	border:  0px gray solid;
+section h1, section h2, section h3 {
+    color: #0066cc;
+    margin-bottom: 1rem;
 }
 
-.element_ind,.element_CV,.element_rec
-{
-	flex: 1;
-	text-align:  center;
+/* CV Items */
+
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
 }
 
-.element_ind a,.element_CV a,.element_rec a
-{
-	text-decoration: none;
-	color: black;
+.mt-1 {
+    margin-top: 1rem;
 }
 
-.element_ind:nth-child(1),.element_CV:nth-child(2),.element_rec:nth-child(3)
-{
-	text-decoration: underline;
-}
-
-header h1
-{
-	font-size: 250%;
-	font-weight: bold;
-}
-
-
-#corps h1
-{
-	margin: 10px 20px 10px 20px;
-	font-size: 170%;
-}
-
-#corps h2
-{
-	font-size: 140%;
-}
-
-#corps h3
-{
-	font-size: 120%;
-}
-
-#corps h2,#corps div,#corps p,#corps li
-{
-	margin: 9px 20px 9px 20px;
-}
-
-#corps h3
-{
-	margin: 9px 30px 9px 30px;
-}
-
-#corps h1 span
-{
-	font-size: 80%;
-	font-weight: normal;
-}
-
-#bloc_acceuil
-{
-	display:  flex;
-	align-items:  center;
-}
-
-#topo_acceuil p
-{
-	text-align: center;
-	font-size: 95%;
-}
-
-#photo
-{
-	width: 40%;
-	max-width: 140px;
-	min-width: 60px;
-	height: auto;
+.mb-1 {
+    margin-bottom: 1rem;
 }
 
 
@@ -229,7 +240,8 @@ header h1
 	font-weight: bold;
 	font-size: 100%;
 	text-align: center;
-	min-width: 90px;
+	min-width: 110px;
+	padding: 1em;
 }
 
 .description p
@@ -242,7 +254,6 @@ header h1
 	font-weight: bold;
 }
 
-
 .bloc_divers em
 {
 	text-decoration: underline;
@@ -251,6 +262,7 @@ header h1
 .ligne_divers
 {
 	font-size: 100%;
+	padding-bottom: 0.4em;
 }
 
 .bloc_publi,.bloc_pres
@@ -258,3 +270,7 @@ header h1
 	font-size: 90%;
 }
 
+.bloc_pres li
+{
+	padding-bottom: 0.4em;
+}
